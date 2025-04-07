@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content=""width=device-width, initial-scale="1.0">
+    <link rel="icon" 
+    type="image/png" 
+    href="favicon.png">
+    <title>Jolie Lai</title>
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="homepage.css">
+    <!--Box Icons-->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <div class="logo">
+                <h2><a href="homepage.html"><img src ="portlogo.png" width="350" ></svg></a></h2>
+            </div>
+            <div class="content">
+                <li class="hideOnMobile"><a href="test.html">About Me</a></li>
+                <li class="hideOnMobile"><a href="resume.pdf" target="_blank">Resume</a></li>
+                <li class="hideOnMobile"><a href="#Projects">Projects</a></li>
+                <li class="menu-bar" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #c3deff;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg></a></li>
+            </div>
+        </ul>
+        <ul class="sidebar">
+         
+            <li onclick=hideSidebar()><img src="x.png" style="height: 50px; width: 50px;"></li>
+            <main>
+            <div class="sidebarcontent">
+            <li><a href="test.html">About Me</a></li>
+            <li><a href="resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            </div></main>
+
+        <footer id="links">
+            <!-- <a href="https://github.com/jolielai" target="_blank"><img src="github.png"></a> -->
+            <a href="https://www.linkedin.com/in/jolielai/" target="_blank"><img src="linkedin.png"></a>
+        </footer>
+        </ul> 
+       
+    </nav>
+
+<ul div class="gallery">
+    <img src="Spot_the_cow.gif" style="width: 100%;">
+</ul>
+
+</body>
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+        const content = document.querySelector('.content')
+        content.style.display='none'
+    }
+    
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+        const content = document.querySelector('.content')
+        content.style.display='flex'
+    }
+
+</script>
+
+</html>

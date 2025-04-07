@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+
+<style>
+html {
+    scroll-behavior: smooth;
+  }
+  /* body {
+
+  background-image: url('callout.png');
+  background-color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} */
+
+</style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content=""width=device-width, initial-scale="1.0">
+    <link rel="icon" 
+    type="image/png" 
+    href="ndslogo.png">
+    <title>Purdue University National Defence Society</title>
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="style copy.css">
+    <!--Box Icons-->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <div style="width: 15%; float: left" class="logo">
+                <h2><a href="homepage.html"><img src ="ndslogo.png" ></svg></a></h2>
+            </div>
+            <div style="width: 85%; float: right" class="content">
+                <li class="hideOnMobile"><a href="#AboutUs">About Us</a></li>
+                <li class="hideOnMobile"><a href="projects.html">Projects</a></li>
+                <li class="hideOnMobile"><a href="#Sponsor">Sponsor Us!</a></li>
+                <li class="hideOnMobile"><a href="#Newsletter">NDS Newsletter</a></li>
+                <li class="hideOnMobile"><a href="#Contact">Contact</a></li>
+            
+            <!-- <div class="menubar"> -->
+                <li class="menu-bar" onclick=showSidebar()><a><img src="menu.png" width="48" height="48"></svg> </svg></a></li>
+            </div>
+        </ul>
+        <ul class="sidebar">
+            <div class="x">
+                <li onclick=hideSidebar()><img src="x.png" height ="50"></li></svg></li>
+            </div>
+            <div class="content">
+                <li><a href="#AboutUs">About Us</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#Sponsor">Sponsor Us!</a></li>
+                <li><a href="#Newsletter">NDS Newsletter</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </div>
+               
+       
+       
+        </ul> 
+    </nav>
+
+   <main>
+    <div class="gallery">
+        <img src="callout.png" alt="Callout" style="width: 100%;">
+        <h2>Hello!</h2>
+    </div>
+</main>
+
+<footer>
+
+
+</footer>
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+        const content = document.querySelector('.content')
+        content.style.display='none'
+    }
+    
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+        const content = document.querySelector('.content')
+        content.style.display='flex'
+    }
+
+</script>
+</body>
+</html>
